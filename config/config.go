@@ -269,7 +269,7 @@ func newCGRConfigFromPathWithoutEnv(path string) (cfg *CGRConfig, err error) {
 }
 
 func isHidden(fileName string) bool {
-	if fileName == "." || fileName == ".." {
+	if fileName == "." || fileName == "." {
 		return false
 	}
 	return strings.HasPrefix(fileName, ".")
